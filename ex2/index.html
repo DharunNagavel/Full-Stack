@@ -1,280 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>TechNova Solutions | Product Company</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TechNova Solutions | Product Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<style>
-        body{
-        margin:0;
-        background:#020617;
-        color:#fff;
-        scroll-behavior:smooth;
-        overflow-x:hidden;
-        }
-        .video-bg{
-        position:fixed;
-        inset:0;
-        z-index:-2;
-        }
-        .video-bg video{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        }
-        .video-overlay{
-        position:fixed;
-        inset:0;
-        background:rgba(2,6,23,0.78);
-        z-index:-1;
-        }
-        .navbar{
-        background:rgba(0,0,0,0.6);
-        backdrop-filter:blur(12px);
-        }
-        .section{
-        padding:110px 0;
-        }
-        .hero{
-        min-height:100vh;
-        }
-        .glass{
-        background:rgba(255,255,255,0.12);
-        backdrop-filter:blur(18px);
-        border:1px solid rgba(255,255,255,0.18);
-        border-radius:18px;
-        padding:32px;
-        box-shadow:0 20px 45px rgba(0,0,0,0.5);
-        transition:.4s;
-        }
-        .glass:hover{
-        transform:translateY(-10px) scale(1.02);
-        }
-        .btn-gradient{
-        background:linear-gradient(45deg,#280cc5,#0ea5e9);
-        border:none;
-        color:#fff;
-        }
-        .fade{
-        opacity:0;
-        transform:translateY(45px);
-        transition:1s ease;
-        }
-        .fade.show{
-        opacity:1;
-        transform:none;
-        }
-        footer{
-        background:rgba(2,6,23,.9);
-        }
-</style>
-</head>
-<body>
-<div class="video-bg">
-  <video autoplay muted loop playsinline poster="images/poster.jpg">
-    <source src="videoplayback.mp4" type="video/mp4">
-  </video>
-</div>
-<div class="video-overlay"></div>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-                <a class="navbar-brand fw-bold" href="#">TechNova</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#workflow">How It Works</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#users">Users</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+    <style>
+      body {
+        margin: 0;
+        background: #000000;
+        color: #fff;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .navbar {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(12px);
+      }
+      .section {
+        padding: 110px 0;
+      }
+      .hero {
+        min-height: 100vh;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+        transition: 0.4s;
+      }
+      .glass:hover {
+        transform: translateY(-10px) scale(1.02);
+      }
+      .btn-gradient {
+        background: linear-gradient(45deg, #280cc5, #0ea5e9);
+        border: none;
+        color: #fff;
+      }
+      .fade {
+        opacity: 0;
+        transform: translateY(45px);
+        transition: 1s ease;
+      }
+      .fade.show {
+        opacity: 1;
+        transform: none;
+      }
+      footer {
+        background: rgba(2, 6, 23, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-bg">
+    </div>
+    <div class="video-overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">TechNova</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#platform">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modules">Modules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workflow">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#users">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vision">Vision</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero d-flex align-items-center text-center">
+      <div class="container fade">
+        <h1 class="display-4 fw-bold">
+          A Unified Intelligence Platform<br />for Digital Operations
+        </h1>
+        <p class="lead mt-3">
+          TechNova is a product-first platform that brings automation,
+          analytics, and cloud intelligence together into a single scalable
+          system designed for modern enterprises.
+        </p>
+        <a href="#platform" class="btn btn-lg btn-gradient mt-4"
+          >Explore Platform</a
+        >
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="glass fade">
+          <h2 class="text-center">The Problem</h2>
+          <p class="mt-4">
+            Organizations today rely on multiple disconnected tools to manage
+            workflows, data analytics, and infrastructure. This fragmented
+            approach increases operational overhead, creates data silos, and
+            limits real-time visibility across systems.
+          </p>
+          <p>
+            As businesses scale, these inefficiencies slow down execution,
+            increase costs, and make it difficult to respond quickly to changing
+            market conditions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="platform">
+      <div class="container">
+        <div class="glass fade">
+          <h2 class="text-center">TechNova Platform</h2>
+          <p class="mt-4">
+            The TechNova Platform is a cloud-native, modular intelligence layer
+            designed to centralize digital operations. It acts as a unified
+            control system that connects workflows, data, and infrastructure
+            into a single operational view.By replacing fragmented tools with
+            one intelligent platform, TechNova enables organizations to operate
+            with greater efficiency, transparency, and scalability.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="modules">
+      <div class="container">
+        <h2 class="text-center mb-5 fade">Core Platform Modules</h2>
+
+        <div
+          id="modulesCarousel"
+          class="carousel slide fade"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+          data-bs-touch="true"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="glass text-center">
+                    <h4>Flow Engine</h4>
+                    <p>
+                      Flow Engine is a visual workflow orchestration module that
+                      automates business processes across systems.
+                    </p>
+                    <p>
+                      It reduces manual effort, ensures consistency, and speeds
+                      up execution.
+                    </p>
+                  </div>
                 </div>
-        </div>
-</nav>
-<section class="hero d-flex align-items-center text-center">
-        <div class="container fade">
-                <h1 class="display-4 fw-bold">
-                A Unified Intelligence Platform<br>for Digital Operations
-                </h1>
-                <p class="lead mt-3">
-                TechNova is a product-first platform that brings automation,
-                analytics, and cloud intelligence together into a single
-                scalable system designed for modern enterprises.
-                </p>
-                <a href="#platform" class="btn btn-lg btn-gradient mt-4">Explore Platform</a>
-        </div>
-</section>
-<section class="section">
-        <div class="container">
-            <div class="glass fade">
-                <h2 class="text-center">The Problem</h2>
-                <p class="mt-4">
-                Organizations today rely on multiple disconnected tools to manage
-                workflows, data analytics, and infrastructure. This fragmented
-                approach increases operational overhead, creates data silos,
-                and limits real-time visibility across systems.
-                </p>
-                <p>
-                As businesses scale, these inefficiencies slow down execution,
-                increase costs, and make it difficult to respond quickly to
-                changing market conditions.
-                </p>
+              </div>
             </div>
-        </div>
-</section>
-<section class="section" id="platform">
-        <div class="container">
-            <div class="glass fade">
-                <h2 class="text-center">TechNova Platform</h2>
-                <p class="mt-4">
-                The TechNova Platform is a cloud-native, modular intelligence layer
-                designed to centralize digital operations. It acts as a unified
-                control system that connects workflows, data, and infrastructure
-                into a single operational view.By replacing fragmented tools with one intelligent platform,
-                TechNova enables organizations to operate with greater efficiency,
-                transparency, and scalability.
-                </p>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="glass text-center">
+                    <h4>Insight Core</h4>
+                    <p>
+                      Insight Core transforms operational data into real-time
+                      dashboards and predictive insights.
+                    </p>
+                    <p>
+                      Teams gain full visibility into performance and risks.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-</section>
-<section class="section" id="modules">
-            <div class="container">
-                    <h2 class="text-center mb-5 fade">Core Platform Modules</h2>
-                    <div class="row g-4">
-
-                                <div class="col-md-4 fade">
-                                        <div class="glass h-100">
-                                                <h4>Flow Engine</h4>
-                                                <p>
-                                                Flow Engine is a visual workflow orchestration module that automates
-                                                business processes across systems. It allows teams to define logic,
-                                                trigger actions, and manage operational flows without heavy manual
-                                                intervention.
-                                                </p>
-                                                <p>
-                                                This module ensures consistency, reduces errors, and accelerates
-                                                execution across the organization.
-                                                </p>
-                                        </div>
-                                </div>
-
-                                <div class="col-md-4 fade">
-                                            <div class="glass h-100">
-                                                    <h4>Insight Core</h4>
-                                                    <p>
-                                                    Insight Core is the analytics and intelligence layer of TechNova.
-                                                    It transforms operational data into real-time dashboards, trends,
-                                                    and predictive insights that support strategic decision-making.
-                                                    </p>
-                                                    <p>
-                                                    Teams gain deeper visibility into performance metrics, risks, and
-                                                    growth opportunities through a unified data view.
-                                                    </p>
-                                            </div>
-                                </div>
-
-                                <div class="col-md-4 fade">
-                                        <div class="glass h-100">
-                                                <h4>Cloud Control</h4>
-                                                <p>
-                                                Cloud Control manages infrastructure deployment, scaling, and
-                                                monitoring across cloud environments. It abstracts infrastructure
-                                                complexity while maintaining high availability and security.
-                                                </p>
-                                                <p>
-                                                This allows engineering teams to focus on innovation instead of
-                                                infrastructure management.
-                                                </p>
-                                        </div>
-                                </div>
-
-                    </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="glass text-center">
+                    <h4>Cloud Control</h4>
+                    <p>
+                      Cloud Control manages deployment, scaling, and monitoring
+                      across cloud environments.
+                    </p>
+                    <p>
+                      Engineers focus on innovation instead of infrastructure.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-</section>
-<section class="section" id="workflow">
-        <div class="container">
-            <div class="glass fade">
-                <h2 class="text-center">How It Works</h2>
-                <p class="mt-4">
-                TechNova connects with existing enterprise systems and data sources.
-Incoming data flows through the Flow Engine, where actions are
-automated based on defined logic and conditions.
-                </p>
-                <p>
-                    The Insight Core continuously analyzes outcomes, while Cloud Control
-ensures system stability and scalability. This closed-loop system
-enables continuous optimization with minimal manual effort.
-                </p>
-            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#modulesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#modulesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-</section>
-<section class="section" id="users">
-        <div class="container">
-            <h2 class="text-center mb-5 fade">Who Uses TechNova</h2>
-            <div class="row g-4 text-center">
-                <div class="col-md-3 fade"><div class="glass"><h5>Product Teams</h5><p>
-Design, iterate, and scale digital products using unified insights
-and automated workflows.
-</p></div></div>
-                <div class="col-md-3 fade"><div class="glass"><h5>Operations Teams</h5><p>
-Monitor and optimize system performance with real-time dashboards
-and automated alerts.
-</p></div></div>
-                <div class="col-md-3 fade"><div class="glass"><h5>Data Teams</h5><p>
-Build and maintain data pipelines, ensuring quality and consistency
-across all systems.
-</p></div></div>
-                <div class="col-md-3 fade"><div class="glass"><h5>Cloud Engineers</h5><p>
-Deploy, manage, and secure cloud infrastructure with automated
-scaling and monitoring.
-</p></div></div>
-            </div>
+      </div>
+    </section>
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="glass fade">
+          <h2 class="text-center">How It Works</h2>
+          <p class="mt-4">
+            TechNova connects with existing enterprise systems and data sources.
+            Incoming data flows through the Flow Engine, where actions are
+            automated based on defined logic and conditions.
+          </p>
+          <p>
+            The Insight Core continuously analyzes outcomes, while Cloud Control
+            ensures system stability and scalability. This closed-loop system
+            enables continuous optimization with minimal manual effort.
+          </p>
         </div>
-</section>
-<section class="section" id="vision">
-        <div class="container">
-            <div class="glass fade">
-                <h2 class="text-center">Vision</h2>
-                <p class="mt-4">
-Our vision is to become the intelligence backbone for modern digital
-organizations. TechNova aims to evolve into a self-optimizing platform
-that adapts automatically to operational and business changes.
-</p>
-<p>
-Future roadmap initiatives include autonomous decision systems,
-advanced predictive models, and deeper ecosystem integrations.
-</p>
+      </div>
+    </section>
+    <section class="section" id="users">
+      <div class="container">
+        <h2 class="text-center mb-5 fade">Who Uses TechNova</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-3 fade">
+            <div class="glass">
+              <h5>Product Teams</h5>
+              <p>
+                Design, iterate, and scale digital products using unified
+                insights and automated workflows.
+              </p>
             </div>
-        </div>
-</section>
-<section class="section" id="contact">
-        <div class="container">
-            <div class="glass text-center fade">
-                <h2>Contact Us</h2>
-                <p class="mt-4">
-                Let's discuss products, partnerships, or early access.
-                </p>
-                <p class="mt-3">product@technovasolutions.com</p>
-                <p>www.technovasolutions.com</p>
-                <p>India | Global Presence</p>
+          </div>
+          <div class="col-md-3 fade">
+            <div class="glass">
+              <h5>Operations Teams</h5>
+              <p>
+                Monitor and optimize system performance with real-time
+                dashboards and automated alerts.
+              </p>
             </div>
+          </div>
+          <div class="col-md-3 fade">
+            <div class="glass">
+              <h5>Data Teams</h5>
+              <p>
+                Build and maintain data pipelines, ensuring quality and
+                consistency across all systems.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 fade">
+            <div class="glass">
+              <h5>Cloud Engineers</h5>
+              <p>
+                Deploy, manage, and secure cloud infrastructure with automated
+                scaling and monitoring.
+              </p>
+            </div>
+          </div>
         </div>
-</section>
-<footer class="text-center py-3">
-    © 2026 TechNova Solutions • Product Company
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-        const io=new IntersectionObserver(entries=>{
-        entries.forEach(e=>e.isIntersecting && e.target.classList.add("show"))
-        },{threshold:0.2});
-        document.querySelectorAll(".fade").forEach(el=>io.observe(el));
-</script>
-</body>
+      </div>
+    </section>
+    <section class="section" id="vision">
+      <div class="container">
+        <div class="glass fade">
+          <h2 class="text-center">Vision</h2>
+          <p class="mt-4">
+            Our vision is to become the intelligence backbone for modern digital
+            organizations. TechNova aims to evolve into a self-optimizing
+            platform that adapts automatically to operational and business
+            changes.
+          </p>
+          <p>
+            Future roadmap initiatives include autonomous decision systems,
+            advanced predictive models, and deeper ecosystem integrations.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="glass text-center fade">
+          <h2>Contact Us</h2>
+          <p class="mt-4">
+            Let's discuss products, partnerships, or early access.
+          </p>
+          <p class="mt-3">product@technovasolutions.com</p>
+          <p>www.technovasolutions.com</p>
+          <p>India | Global Presence</p>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center py-3">
+      © 2026 TechNova Solutions • Product Company
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(
+            (e) => e.isIntersecting && e.target.classList.add("show"),
+          );
+        },
+        { threshold: 0.2 },
+      );
+      document.querySelectorAll(".fade").forEach((el) => io.observe(el));
+    </script>
+  </body>
 </html>
